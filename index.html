@@ -6,14 +6,14 @@
     <title>Photo Gallery</title>
     <!-- stylesheet -->
     <link rel="stylesheet" href="./style.css">
-    <!-- Script -->
-    <script></script>
     <!-- favicon -->
      <link rel="shortcut icon" href="https://png.pngtree.com/png-vector/20190521/ourmid/pngtree-gallery-logo-icon-design-template-vector-png-image_1048779.jpg" type="image/x-icon">
+     <!-- font awesome -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <h1></h1>
-    <div class="gallery">
+    <div class="main-container">
+        <div class="gallery">
         <img src="https://t4.ftcdn.net/jpg/02/01/78/01/360_F_201780104_hetXS26W8alnsbDKbpnr4sVizJfiO12w.jpg" alt="">
         <img src="https://plus.unsplash.com/premium_photo-1664474619075-644dd191935f?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aW1hZ2V8ZW58MHx8MHx8fDA%3D" alt="">
         <img src="https://media.istockphoto.com/id/1317323736/photo/a-view-up-into-the-trees-direction-sky.jpg?s=612x612&w=0&k=20&c=i4HYO7xhao7CkGy7Zc_8XSNX_iqG0vAwNsrH1ERmw2Q=" alt="">
@@ -24,11 +24,19 @@
         <img src="https://i.pinimg.com/originals/a0/60/3e/a0603e74be076d36dccf22e40594f4ef.jpg" alt="">
         <img src="https://img.freepik.com/free-photo/cute-ai-generated-cartoon-bunny_23-2150288871.jpg" alt="">
         <img src="https://i.pinimg.com/736x/44/9d/a1/449da1982c404f19ec1ca70325608725.jpg" alt="">
+        <img src="https://i.pinimg.com/736x/98/9c/da/989cdafb1122686192f1aa5dcb93a434.jpg" alt="">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgMSm_tgXeVL4bhugCEnHUFkFgr348maiXwQ&s" alt="">
     </div>
     <!-- Lightbox -->
      <div id="lightbox" class="lightbox">
-        <span class="close"></span>
-        <img src="" alt="" class="lightbox-content" id="lightbox-img">
+       <i class="fa-solid fa-square-xmark close"></i>
+        <i class="fa-solid fa-chevron-left prev"></i>
+        <img class="lightbox-content" id="lightbox-img">
+        <i class="fa-solid fa-caret-right next"></i>
     </div>
+    </div>
+
+    <!-- Script -->
+    <script src="./script.js"></script>
 </body>
 </html>
